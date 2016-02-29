@@ -1,0 +1,349 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Helvetica-Light";
+  /* Имя шрифта */
+  src: url("../fonts/HelveticaNeueCyr-Light.otf");
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: "Helvetica-Roman";
+  /* Имя шрифта */
+  src: url("../fonts/HelveticaNeueCyr-Roman.otf");
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: "Helvetica-Medium";
+  /* Имя шрифта */
+  src: url("../fonts/HelveticaNeueCyr-Medium.otf");
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  /* Имя шрифта */
+  src: url("../fonts/HelveticaNeueCyr-Bold.otf");
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: "CTCSplashRounded-Bold";
+  /* Имя шрифта */
+  src: url("../fonts/CTCSplashRounded-Bold.otf");
+  /* Путь к файлу со шрифтом */ }
+
+/* set your base font and uncomment
+
+$base-font-size: 15px;
+
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 16px; }
+
+.to-right {
+  float: right; }
+
+.clear:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.wrapper {
+  position: relative; }
+
+
+/* === Header layout === */
+/* === Main layout === */
+
+  .main .wrap {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 70px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    }
+    .main .wrap:after {
+      content: " ";
+      display: block;
+      clear: both; }
+
+.profile-data {
+  width: 74%;
+  float: left; }
+  .profile-data-item {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .profile-data-item:after {
+      content: " ";
+      display: block;
+      clear: both; }
+  .profile-data .label {
+   /* width: 33.33333%;*/
+    float: left; }
+  .profile-data .value {
+    width: 66.66667%;
+    float: right; }
+
+.profile-img {
+  width: 26%;
+  float: left; }
+
+.stats-main .row {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .stats-main .row:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.stats-cur .left-col {
+  float: left; }
+
+.stats-cur .right-col {
+  float: right; }
+
+.stats .stat-point {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.blog-posts {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify; }
+  .blog-posts:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .blog-posts:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+
+.blog-post {
+  display: inline-block;
+  max-width: 256px; }
+
+
+
+
+
+
+
+
+
+/* === Main module === */
+.main > * {
+  background-color: #fff; }
+
+.line {
+  padding: 5px 0;
+  background-color: #f1f1f1;
+  border-top: 1px solid #e8e8e8; }
+  .line .wrap.no-color {
+    background-color: #f1f1f1; }
+  .line span {
+    font-size: .875em;
+    line-height: 1.428571428571429;
+    color: #b2b2b2; }
+
+.module-header {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  border-bottom: 2px solid #ccc; }
+  .module-header h2 {
+    font-family: "CTCSplashRounded-Bold";
+    font-size: 1.5em;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    color: #4b59ad; }
+
+.link-in-header {
+  float: right; }
+  .link-in-header a {
+    font-family: "Helvetica-Roman";
+    font-size: .875em;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #b2b2b2;
+    text-decoration: none; }
+
+/* === Profile module === */
+.profile-header h2 {
+  float: left;
+  text-transform: uppercase;
+  color: #6947ac; }
+
+.profile-img {
+  text-align: right; }
+  .profile-img img {
+    width: 100%; }
+
+.profile-data-item {
+  margin-bottom: 15px; }
+  .profile-data-item.gender {
+    margin-bottom: 25px; }
+
+.profile-data .label {
+  text-align: left;
+  font-family: "Helvetica-Roman";
+  font-size: 1em;
+  color: #999; }
+  .profile-data .label-comment {
+    display: block;
+    text-align: left;
+    font-weight: 100;
+    width: 100%;
+    font-size: 13px;
+    line-height: 14px; }
+
+.profile-data .mandatory {
+  font-size: 1.125em;
+  color: #f44336; }
+
+.profile-data .value {
+  font-family: "Helvetica-Medium";
+  font-size: 1.125em;
+  color: #0a0c19; }
+
+.profile .sex-trigger {
+  font-size: 0px; }
+  .profile .sex-trigger span {
+    font-family: "Helvetica-Medium";
+    font-size: 18px;
+    padding: 9px 14px;
+    color: #b3b3b3;
+    background-color: #fff;
+    border: 1px solid;
+    cursor: pointer;
+    -webkit-transition: all .5s;
+            transition: all .5s; }
+  .profile .sex-trigger .men {
+    border-right: none;
+    -webkit-border-top-left-radius: 19px;
+       -moz-border-radius-topleft: 19px;
+            border-top-left-radius: 19px;
+    -webkit-border-bottom-left-radius: 19px;
+       -moz-border-radius-bottomleft: 19px;
+            border-bottom-left-radius: 19px; }
+  .profile .sex-trigger .women {
+    border-left: none;
+    -webkit-border-bottom-right-radius: 19px;
+       -moz-border-radius-bottomright: 19px;
+            border-bottom-right-radius: 19px;
+    -webkit-border-top-right-radius: 19px;
+       -moz-border-radius-topright: 19px;
+            border-top-right-radius: 19px; }
+  .profile .sex-trigger .active {
+    background-color: #000;
+    color: #fff;
+    border-color: #000; }
+
+.content,.content-header
+{
+  padding: 0px !important;
+}
+.close-btn
+{
+  display: none;
+}
+.form-group label
+{
+  margin-bottom: 10px !important;
+}
+.bg-popup
+{
+  display: none;
+  cursor: pointer;
+  background:rgba(96,92,168,0.7);
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 9999;
+}
+.content-popup
+{
+  cursor: default;
+  padding: 50px;
+  display: block;
+  margin: 10% auto auto auto;
+  width: 60%;
+  height: 60%;
+  background: #ffffff;
+}
+.select-urist
+{
+  border: 1px;
+}
+.select-urist td
+{
+  border: 1px solid #000000;
+  padding: 2px;
+  text-align: center;
+}
+.select-urist tr.header
+{
+  font-weight: bolder;
+}
+.select-urist tr
+{
+  padding: 5px;
+  width: 100%;
+}
+.select-urist tr.body-ur:hover
+{
+   background:rgba(96,92,168,0.7);
+   cursor: pointer;
+}
